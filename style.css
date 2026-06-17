@@ -1,1 +1,210 @@
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    color: #ffffff;
+    background-color: #070b19;
+    background-image: url('background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+}
+
+.app-container {
+    max-width: 480px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.main-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.logo-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.logo-icon {
+    width: 60px;
+    height: 60px;
+    background-image: url('logo.png');
+    background-size: contain;
+    margin-right: 15px;
+}
+
+.title-wrapper h1 {
+    font-size: 24px;
+    color: #cca43b;
+    margin-bottom: 5px;
+}
+
+.title-wrapper p {
+    font-size: 12px;
+    color: #d1d5db;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+}
+
+.language-selector {
+    background: #1e293b;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 14px;
+    margin-right: 10px;
+    border: 1px solid #334155;
+    cursor: pointer;
+}
+
+.top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #1e293b;
+    padding: 12px 15px;
+    border-radius: 12px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+.email-box {
+    font-size: 14px;
+    color: #94a3b8;
+}
+
+.social-icons {
+    display: flex;
+    gap: 10px;
+}
+
+.icon {
+    width: 24px;
+    height: 24px;
+    display: inline-block;
+}
+
+.word-of-day {
+    background: linear-gradient(135deg, #1e293b, #0f172a);
+    padding: 20px;
+    border-radius: 16px;
+    text-align: center;
+    margin-bottom: 25px;
+    border: 1px solid #cca43b;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(204, 164, 59, 0.2);
+}
+
+.date-header {
+    font-size: 12px;
+    color: #cca43b;
+    margin-bottom: 10px;
+}
+
+.word-title {
+    font-size: 22px;
+    font-weight: bold;
+    color: #cca43b;
+    margin-bottom: 15px;
+}
+
+.levels-section h2, .exercises-section h2 {
+    font-size: 20px;
+    margin-bottom: 15px;
+}
+
+.levels-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    margin-bottom: 25px;
+}
+
+.level-card {
+    background: #1e293b;
+    border-radius: 16px;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    border: 1px solid #334155;
+    position: relative;
+    text-align: left;
+}
+
+.level-card .badge {
+    width: 40px;
+    height: 40px;
+    border-radius: 10px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+}
+
+.level-card.A1 .badge { background: #fee2e2; color: #dc2626; }
+.level-card.A2 .badge { background: #ffedd5; color: #ea580c; }
+.level-card.B1 .badge { background: #fef08a; color: #ca8a04; }
+.level-card.B2 .badge { background: #dcfce7; color: #16a34a; }
+.level-card.C1 .badge { background: #ccfbf1; color: #0d9488; }
+.level-card.C2 .badge { background: #e0f2fe; color: #0284c7; }
+
+.card-content h3 {
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+
+.card-content p {
+    font-size: 12px;
+    color: #64748b;
+}
+
+.exercises-section {
+    background: #1e293b;
+    padding: 20px;
+    border-radius: 16px;
+    margin-bottom: 25px;
+    border: 1px solid #334155;
+}
+
+.book-banner {
+    width: 100%;
+    height: 120px;
+    background-image: url('book-banner.jpg');
+    background-size: cover;
+    background-position: center;
+    border-radius: 12px;
+    margin-top: 15px;
+}
+
+.bottom-nav {
+    display: flex;
+    justify-content: space-between;
+    background: #1e293b;
+    padding: 15px;
+    border-radius: 30px;
+    border: 1px solid #334155;
+}
+
+.nav-item {
+    color: #64748b;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.nav-item.active {
+    color: #cca43b;
+    font-weight: bold;
+}
