@@ -208,3 +208,10 @@ body {
     color: #cca43b;
     font-weight: bold;
 }
+.word-img {
+    width: 150px; 
+    height: auto;
+    display: block;
+    margin: 10px auto;
+    border-radius: 8px; /* لإضافة انحناء خفيف ولطيف للحواف */
+}
