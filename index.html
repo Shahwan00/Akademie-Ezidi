@@ -1,124 +1,140 @@
-
 <!DOCTYPE html>
-<html lang="ku">
+<html lang="ku" dir="rtl">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Zimanê Êzîdî</title>
+    <title>Akademiya Ezidi - تعلم اللغة الإيزيدية</title>
     <link rel="stylesheet" href="style.css">
+    <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3516282666099519" crossorigin="anonymous"></script>
 </head>
 <body>
-    <div class="app-container">
-        <!-- Header -->
-        <header class="main-header">
-            <div class="logo-wrapper">
-                <div class="logo-icon"></div>
-                <div class="title-wrapper">
-                    <h1>Zimanê Êzîdî</h1>
-                    <p>ZIMAN Û ÇANDA ME</p>
-                </div>
-            </div>
-            <div class="header-actions">
-                <div class="language-selector">Êzîdî</div>
-                <div class="menu-icon"></div>
-            </div>
-        </header>
 
-        <!-- Social & Contact -->
-        <section class="top-bar">
-            <div class="email-box">kugathaj@gmail.com</div>
-            <div class="social-icons">
-                <a href="#" class="icon whatsapp"></a>
-                <a href="#" class="icon youtube"></a>
-                <a href="#" class="icon facebook"></a>
-                <a href="#" class="icon instagram"></a>
-            </div>
-        </section>
-
-        <!-- Word of the Day -->
-        <section class="word-of-day">
-            <div class="date-header">20 / 07 / 2025</div>
-            
-
-            <h2>Gotina Roja</h2>
-           <img src="images/file_000000007d2871fdbc58b6942b576b16.png" alt="لالش" class="word-img">
-
-
-
-            <p class="word-title">Vebijêrk (Reaktion)</p>
-         
-            <p class="word-desc">Reaksiyona w gelek şaşîrt.</p>
-            <p class="word-subdesc">Rêaksiyona w pir şaşbû.</p>
-
-            
-        </section>
-
-        <!-- Levels Section -->
-        <section class="levels-section">
-            <h2>Ast (Levels)</h2>
-            <div class="levels-grid">
-                <div class="level-card A1">
-                    <div class="badge">A1</div>
-                    <div class="card-content">
-                        <h3>Destpêk</h3>
-                        <p>Beginner</p>
-                    </div>
-                </div>
-                <div class="level-card A2">
-                    <div class="badge">A2</div>
-                    <div class="card-content">
-                        <h3>Bingehîn</h3>
-                        <p>Elementary</p>
-                    </div>
-                </div>
-                <div class="level-card B1">
-                    <div class="badge">B1</div>
-                    <div class="card-content">
-                        <h3>Navîn</h3>
-                        <p>Intermediate</p>
-                    </div>
-                </div>
-                <div class="level-card B2">
-                    <div class="badge">B2</div>
-                    <div class="card-content">
-                        <h3>Jorîn Navîn</h3>
-                        <p>Upper Intermediate</p>
-                    </div>
-                </div>
-                <div class="level-card C1">
-                    <div class="badge">C1</div>
-                    <div class="card-content">
-                        <h3>Pêşketî</h3>
-                        <p>Advanced</p>
-                    </div>
-                </div>
-                <div class="level-card C2">
-                    <div class="badge">C2</div>
-                    <div class="card-content">
-                        <h3>Expert</h3>
-                        <p>Expert</p>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Exercises Section -->
-        <section class="exercises-section">
-            <h2>Xebat</h2>
-            <p class="sub-title">Übungen / Exercises</p>
-            <div class="book-banner"></div>
-        </section>
-
-        <!-- Bottom Navigation -->
-        <nav class="bottom-nav">
-            <a href="#" class="nav-item active">Mal</a>
-            <a href="#" class="nav-item">A1</a>
-            <a href="#" class="nav-item">A2</a>
-            <a href="#" class="nav-item">B1</a>
-            <a href="#" class="nav-item">B2</a>
-            <a href="#" class="nav-item">C1</a>
-            <a href="#" class="nav-item">C2</a>
-        </nav>
+    <div class="app-bar">
+        <div class="app-bar-right">
+            <span class="menu-icon">☰</span>
+            <span class="app-title">Akademiya Ezidi</span>
+        </div>
+        <div class="lang-selector">🌐 English ▾</div>
     </div>
+
+    <div class="container">
+        
+        <div id="levels-section" class="section active">
+            <header class="main-header">
+                <div class="header-logo-right">
+                    <img src="images/IMG_20260429_211917_056.jpg" alt="Logo">
+                    <div class="logo-subtext">Akademiya Ezidi</div>
+                </div>
+                <div class="header-text-center">
+                    <h1>برنامج تعلم اللغة الإيزيدية</h1>
+                    <p>اختر المستوى التعليمي المناسب لبدء التعلم:</p>
+                </div>
+                <div class="header-logo-left">
+                    <img src="images/images.jpeg" alt="Flag">
+                </div>
+            </header>
+
+            <div class="section-title-container">
+                <span class="title-icon">📚</span>
+                <div class="title-text">
+                    <h3>Levels</h3>
+                    <p>Choose your proficiency level</p>
+                </div>
+            </div>
+
+            <div class="grid-levels">
+                <div class="level-card" onclick="startLevel('A1')">
+                    <div class="level-badge a1">A1</div>
+                    <div class="level-info">
+                        <span class="level-title">Anfänger</span>
+                        <span class="level-subtitle">Beginner</span>
+                    </div>
+                </div>
+                <div class="level-card" onclick="startLevel('A2')">
+                    <div class="level-badge a2">A2</div>
+                    <div class="level-info">
+                        <span class="level-title">Grundlagen</span>
+                        <span class="level-subtitle">Elementary</span>
+                    </div>
+                </div>
+                <div class="level-card" onclick="startLevel('B1')">
+                    <div class="level-badge b1">B1</div>
+                    <div class="level-info">
+                        <span class="level-title">Mittelstufe</span>
+                        <span class="level-subtitle">Intermediate</span>
+                    </div>
+                </div>
+                <div class="level-card" onclick="startLevel('B2')">
+                    <div class="level-badge b2">B2</div>
+                    <div class="level-info">
+                        <span class="level-title">Oberstufe</span>
+                        <span class="level-subtitle">Upper Intermediate</span>
+                    </div>
+                </div>
+                <div class="level-card" onclick="startLevel('C1')">
+                    <div class="level-badge c1">C1</div>
+                    <div class="level-info">
+                        <span class="level-title">Fortgeschritten</span>
+                        <span class="level-subtitle">Advanced</span>
+                    </div>
+                </div>
+                <div class="level-card" onclick="startLevel('C2')">
+                    <div class="level-badge c2">C2</div>
+                    <div class="level-info">
+                        <span class="level-title">Experte</span>
+                        <span class="level-subtitle">Expert</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="letters-section" class="section">
+            <div class="content-header">
+                <button class="back-btn" onclick="goToLevels()">🡪 العودة للمستويات</button>
+                <h2 id="current-level-title">المرحلة الأولى: تعلّم الحروف</h2>
+                <p>اضغط على الحرف للاستماع إلى النطق الصحيح:</p>
+            </div>
+            <div class="grid-container" id="letters-grid"></div>
+            <button class="btn btn-next" onclick="goToWords()">الانتقال إلى الكلمات ←</button>
+        </div>
+
+        <div id="words-section" class="section">
+            <div class="content-header">
+                <button class="back-btn" onclick="goToLevels()">🡪 العودة للمستويات</button>
+                <h2>المرحلة الثانية: تعلّم الكلمات</h2>
+                <p>اضغط على الكلمة للاستماع إلى نطقها وترجمتها بالألمانية والعربية:</p>
+            </div>
+            <div class="grid-container" id="words-grid"></div>
+            <button class="btn btn-next" onclick="goToQuiz()">الانتقال إلى الاختبار ←</button>
+        </div>
+
+        <div id="quiz-section" class="section">
+            <div class="content-header">
+                <button class="back-btn" onclick="goToLevels()">🡪 العودة للمستويات</button>
+                <h2>المرحلة الثالثة: الاختبار (Test)</h2>
+            </div>
+            <div class="quiz-container">
+                <p id="quiz-question" style="font-size: 20px; font-weight: bold; color: #e2e8f0;"></p>
+                <div id="quiz-word" class="yezidi-text" style="font-size: 48px; margin: 25px 0; color: #fff;"></div>
+                <div class="options-grid" id="quiz-options"></div>
+            </div>
+            <div id="quiz-result" style="margin-top: 20px; font-size: 18px; font-weight: bold;"></div>
+        </div>
+
+    </div>
+
+    <div class="bottom-nav">
+        <button class="nav-item active" id="nav-home" onclick="goToLevels()">
+            <span class="nav-icon">🏠</span>
+        </button>
+        <button class="nav-item" onclick="startLevel('A1')">A1</button>
+        <button class="nav-item" onclick="startLevel('A2')">A2</button>
+        <button class="nav-item" onclick="startLevel('B1')">B1</button>
+        <button class="nav-item" onclick="startLevel('B2')">B2</button>
+        <button class="nav-item" onclick="startLevel('C1')">C1</button>
+        <button class="nav-item" onclick="startLevel('C2')">C2</button>
+    </div>
+
+    <script src="script.js"></script>
 </body>
 </html>
