@@ -14,7 +14,7 @@
   font-style: normal;
 }
 
-/* التنسيق العام المبني على الوضع الداكن كالصورة تماماً */
+/* تنسيق النظام الداكن الثابت والمحمي */
 body {
     font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -24,10 +24,9 @@ body {
     direction: rtl;
     text-align: center;
     color: #e2e8f0;
-    padding-bottom: 90px; /* مساحة فارغة من أجل الشريط السفلي */
+    padding-bottom: 95px; 
 }
 
-/* شريط التطبيق العلوي */
 .app-bar {
     background-color: #161b22;
     display: flex;
@@ -40,7 +39,7 @@ body {
 .app-bar-right {
     display: flex;
     align-items: center;
-    gap: 15px;
+    gap: 12px;
 }
 
 .menu-icon {
@@ -51,36 +50,34 @@ body {
 
 .app-title {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     color: #ffffff;
 }
 
 .lang-selector {
     background: #21262d;
-    padding: 5px 12px;
+    padding: 4px 10px;
     border-radius: 6px;
-    font-size: 13px;
+    font-size: 12px;
     color: #c9d1d9;
-    cursor: pointer;
 }
 
 .container {
     max-width: 650px;
     margin: 0 auto;
-    padding: 20px;
+    padding: 15px;
 }
 
-/* تنسيق الهيدر */
 .main-header {
     display: flex;
     justify-content: space-between; 
     align-items: center;            
     padding: 15px;
     background-color: #161b22;      
-    margin-bottom: 25px;
+    margin-bottom: 20px;
     border-radius: 12px;
     border: 1px solid #21262d;
-    gap: 15px;
+    gap: 10px;
 }
 
 .header-text-center {
@@ -89,248 +86,238 @@ body {
 }
 
 .header-text-center h1 {
-    font-size: 20px;
+    font-size: 18px;
     color: #ffffff;
-    margin: 0 0 5px 0;
+    margin: 0 0 4px 0;
 }
 
 .header-text-center p {
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
     color: #8b949e;
 }
 
-.header-logo-right, .header-logo-left {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
 .header-logo-right img {
-    max-height: 55px;
-    width: auto;
-    border-radius: 8px;
+    max-height: 50px;
+    border-radius: 6px;
 }
 
 .logo-subtext {
-    font-size: 11px;
-    font-weight: bold;
+    font-size: 10px;
     color: #58a6ff;
-    margin-top: 3px;
+    margin-top: 2px;
 }
 
 .header-logo-left img {
-    max-height: 50px;
-    width: auto;
+    max-height: 45px;
     border-radius: 50%;
 }
 
-/* حاوية عنوان الأقسام */
 .section-title-container {
     display: flex;
     align-items: center;
-    gap: 12px;
+    gap: 10px;
     text-align: right;
     margin-bottom: 15px;
-    padding: 0 5px;
 }
 
 .title-icon {
-    font-size: 24px;
+    font-size: 22px;
 }
 
 .title-text h3 {
     margin: 0;
-    font-size: 18px;
+    font-size: 17px;
     color: #ffffff;
 }
 
 .title-text p {
     margin: 0;
-    font-size: 13px;
+    font-size: 12px;
     color: #8b949e;
 }
 
-/* تصاميم واجهة كروت المستويات (شبيهة بالصورة بنسبة 100%) */
+/* تنظيم شبكة أزرار المستويات الستة كمظهر الصورة المرسلة تماماً */
 .grid-levels {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    margin-bottom: 25px;
+    gap: 12px;
+    margin-bottom: 20px;
 }
 
 .level-card {
     background: #161b22;
     border: 1px solid #30363d;
     border-radius: 12px;
-    padding: 16px;
+    padding: 14px;
     cursor: pointer;
-    transition: transform 0.2s, border-color 0.2s;
+    transition: all 0.2s;
     display: flex;
     align-items: center;
     text-align: right;
-    gap: 15px;
+    gap: 12px;
 }
 
 .level-card:hover {
-    transform: translateY(-3px);
     border-color: #58a6ff;
     background-color: #1f242c;
+    transform: translateY(-2px);
 }
 
 .level-badge {
-    width: 42px;
-    height: 42px;
+    width: 40px;
+    height: 40px;
     border-radius: 8px;
     display: flex;
     align-items: center;
     justify-content: center;
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     color: #ffffff;
     flex-shrink: 0;
 }
 
-/* الألوان الخاصة بكل مستوى مأخوذة من لقطة الشاشة المرفقة */
-.level-badge.a1 { background-color: #10b981; } /* أخضر مريح */
-.level-badge.a2 { background-color: #3b82f6; } /* أزرق */
-.level-badge.b1 { background-color: #8b5cf6; } /* بنفسجي */
-.level-badge.b2 { background-color: #f59e0b; } /* برتقالي */
-.level-badge.c1 { background-color: #ef4444; } /* أحمر */
-.level-badge.c2 { background-color: #6366f1; } /* نيلي */
+.level-badge.a1 { background-color: #10b981; }
+.level-badge.a2 { background-color: #3b82f6; }
+.level-badge.b1 { background-color: #8b5cf6; }
+.level-badge.b2 { background-color: #f59e0b; }
+.level-badge.c1 { background-color: #ef4444; }
+.level-badge.c2 { background-color: #6366f1; }
 
 .level-info {
     display: flex;
     flex-direction: column;
-    gap: 2px;
 }
 
 .level-title {
-    font-size: 15px;
+    font-size: 14px;
     font-weight: bold;
     color: #ffffff;
 }
 
 .level-subtitle {
-    font-size: 12px;
+    font-size: 11px;
     color: #8b949e;
 }
 
-/* كروت الحروف والكلمات الإيزيدية */
+/* حل مشكلة تداخل وعشوائية الحروف والكلمات الإيزيدية */
 .grid-container {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(110px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
     gap: 12px;
-    margin: 20px 0;
+    margin: 15px 0;
 }
 
 .card {
     background: #161b22;
     border: 1px solid #21262d;
     border-radius: 10px;
-    padding: 15px;
+    padding: 12px;
     cursor: pointer;
-    transition: all 0.2s ease;
+    transition: all 0.2s;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    min-height: 85px;
+    box-sizing: border-box;
 }
 
 .card:hover {
-    transform: translateY(-3px);
     border-color: #58a6ff;
     background-color: #1f242c;
 }
 
+/* حماية النصوص الإيزيدية والترجمات من الخروج عن حجم الكروت */
 .yezidi-text {
     font-family: 'YezidiFont', 'Noto Serif Yezidi', sans-serif;
-    font-size: 26px;
+    font-size: 24px;
     color: #58a6ff;
-    margin-bottom: 5px;
-    word-wrap: break-word;       
-    overflow-wrap: break-word;   
-    white-space: normal;         
+    margin-bottom: 4px;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    white-space: normal;
 }
 
 .translation {
-    font-size: 13px;
+    font-size: 12px;
     color: #8b949e;
+    width: 100%;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
 }
 
-/* تنسيقات الأزرار المحدثة */
+/* تنسيقات الأزرار والتنبيهات */
 .btn {
     background-color: #238636;
     color: white;
     border: none;
-    padding: 12px 35px;
-    font-size: 16px;
+    padding: 12px 25px;
+    font-size: 15px;
     border-radius: 20px;
     cursor: pointer;
     margin-top: 15px;
-    transition: background 0.2s;
     font-family: 'Cairo', sans-serif;
     font-weight: bold;
 }
 
-.btn:hover {
-    background-color: #2ea043;
-}
+.btn:hover { background-color: #2ea043; }
 
 .back-btn {
     background: #21262d;
     color: #c9d1d9;
     border: 1px solid #30363d;
-    padding: 6px 14px;
+    padding: 5px 12px;
     border-radius: 6px;
     cursor: pointer;
-    font-size: 13px;
+    font-size: 12px;
     float: right;
     font-family: 'Cairo', sans-serif;
 }
 
-.back-btn:hover {
-    background: #30363d;
-    color: #ffffff;
-}
-
 .content-header {
     text-align: right;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .content-header h2 {
-    margin: 10px 0 5px 0;
-    font-size: 18px;
+    margin: 8px 0 4px 0;
+    font-size: 17px;
     color: #ffffff;
 }
 
-/* تنسيق قسم الاختبار بالوضع الداكن */
+.no-data-msg {
+    grid-column: 1 / -1;
+    color: #8b949e;
+    padding: 30px;
+    font-style: italic;
+    font-size: 14px;
+}
+
+/* نافذة الاختبار والاختيارات */
 .quiz-container {
     background: #161b22;
     padding: 20px;
     border-radius: 12px;
     border: 1px solid #21262d;
-    margin-top: 20px;
 }
 
 .options-grid {
     display: grid;
     grid-template-columns: 1fr 1fr;
-    gap: 12px;
-    margin-top: 20px;
+    gap: 10px;
+    margin-top: 15px;
 }
 
 .option-btn {
     background: #21262d;
     border: 1px solid #30363d;
-    padding: 14px;
-    font-size: 15px;
+    padding: 12px;
+    font-size: 14px;
     color: #ffffff;
     border-radius: 8px;
     cursor: pointer;
-    transition: all 0.2s;
     font-family: 'Cairo', sans-serif;
 }
 
@@ -339,19 +326,27 @@ body {
     background: #282e38;
 }
 
-/* شريط التنقل السفلي الاحترافي */
+.alert-msg {
+    padding: 8px 15px;
+    border-radius: 5px;
+    display: inline-block;
+}
+.success-msg { color: #2ecc71; background: rgba(46,204,113,0.1); }
+.error-msg { color: #e74c3c; background: rgba(231,76,60,0.1); }
+
+/* شريط التنقل السفلي الثابت والمريح */
 .bottom-nav {
     position: fixed;
     bottom: 0;
     left: 0;
     right: 0;
-    height: 65px;
+    height: 60px;
     background-color: #161b22;
     border-top: 1px solid #21262d;
     display: flex;
     justify-content: space-around;
     align-items: center;
-    padding: 0 10px;
+    padding: 0 5px;
     z-index: 1000;
 }
 
@@ -359,12 +354,15 @@ body {
     background: transparent;
     border: none;
     color: #8b949e;
-    font-size: 15px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    padding: 8px 12px;
-    border-radius: 8px;
-    transition: all 0.2s;
+    padding: 6px 10px;
+    border-radius: 6px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Cairo', sans-serif;
 }
 
 .nav-item:hover, .nav-item.active {
@@ -372,27 +370,22 @@ body {
     background-color: #21262d;
 }
 
-.nav-item.active #nav-home, .nav-item#nav-home {
+.nav-item.active#nav-home {
     background-color: #1f6feb;
     color: white;
-    border-radius: 12px;
-    padding: 10px 14px;
 }
 
-.nav-icon {
-    font-size: 18px;
-}
+.nav-icon { font-size: 16px; }
 
-/* تحسينات الشاشات الصغيرة (الجوال) */
+/* دعم وتعديل الشاشات الصغيرة والهواتف بنسبة 100% */
 @media (max-width: 600px) {
     .grid-levels {
-        grid-template-columns: 1fr; /* عرض كرت واحد مفرود بالسطر على الهاتف لتطابق تام */
-        gap: 12px;
+        grid-template-columns: 1fr; /* جعل كروت المستويات مفرودة بشكل طولي رائع وسهل النقر على الهاتف */
     }
 
     .grid-container {
-        grid-template-columns: repeat(3, 1fr); /* 3 حروف بالسطر في الجوال لترتيب أفضل */
-        gap: 8px;
+        grid-template-columns: repeat(3, 1fr); /* ترتيب 3 كروت حروف بالسطر بدلاً من الخروج والتداخل */
+        gap: 6px;
     }
     
     .options-grid {
@@ -400,20 +393,14 @@ body {
     }
 
     .main-header {
-        flex-direction: row;
         padding: 10px;
     }
 
     .header-text-center h1 {
-        font-size: 16px;
+        font-size: 15px;
     }
 }
 
-/* نظام إظهار وإخفاء الأقسام */
-.section {
-    display: none !important;
-}
-
-.section.active {
-    display: block !important;
-}
+/* نظام إظهار وإخفاء المحتويات برمجياً */
+.section { display: none !important; }
+.section.active { display: block !important; }
