@@ -14,7 +14,6 @@
   font-style: normal;
 }
 
-/* تنسيق النظام الداكن الثابت والمحمي */
 body {
     font-family: 'Cairo', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin: 0;
@@ -137,7 +136,6 @@ body {
     color: #8b949e;
 }
 
-/* تنظيم شبكة أزرار المستويات الستة كمظهر الصورة المرسلة تماماً */
 .grid-levels {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -200,7 +198,6 @@ body {
     color: #8b949e;
 }
 
-/* حل مشكلة تداخل وعشوائية الحروف والكلمات الإيزيدية */
 .grid-container {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(105px, 1fr));
@@ -228,7 +225,6 @@ body {
     background-color: #1f242c;
 }
 
-/* حماية النصوص الإيزيدية والترجمات من الخروج عن حجم الكروت */
 .yezidi-text {
     font-family: 'YezidiFont', 'Noto Serif Yezidi', sans-serif;
     font-size: 24px;
@@ -248,7 +244,6 @@ body {
     overflow-wrap: break-word;
 }
 
-/* تنسيقات الأزرار والتنبيهات */
 .btn {
     background-color: #238636;
     color: white;
@@ -290,12 +285,11 @@ body {
 .no-data-msg {
     grid-column: 1 / -1;
     color: #8b949e;
-    padding: 30px;
+    padding: 20px;
     font-style: italic;
-    font-size: 14px;
+    font-size: 13px;
 }
 
-/* نافذة الاختبار والاختيارات */
 .quiz-container {
     background: #161b22;
     padding: 20px;
@@ -334,7 +328,6 @@ body {
 .success-msg { color: #2ecc71; background: rgba(46,204,113,0.1); }
 .error-msg { color: #e74c3c; background: rgba(231,76,60,0.1); }
 
-/* شريط التنقل السفلي الثابت والمريح */
 .bottom-nav {
     position: fixed;
     bottom: 0;
@@ -377,14 +370,13 @@ body {
 
 .nav-icon { font-size: 16px; }
 
-/* دعم وتعديل الشاشات الصغيرة والهواتف بنسبة 100% */
 @media (max-width: 600px) {
     .grid-levels {
-        grid-template-columns: 1fr; /* جعل كروت المستويات مفرودة بشكل طولي رائع وسهل النقر على الهاتف */
+        grid-template-columns: 1fr; 
     }
 
     .grid-container {
-        grid-template-columns: repeat(3, 1fr); /* ترتيب 3 كروت حروف بالسطر بدلاً من الخروج والتداخل */
+        grid-template-columns: repeat(3, 1fr); 
         gap: 6px;
     }
     
@@ -401,6 +393,5 @@ body {
     }
 }
 
-/* نظام إظهار وإخفاء المحتويات برمجياً */
 .section { display: none !important; }
 .section.active { display: block !important; }
