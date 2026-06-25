@@ -14,7 +14,7 @@
             <span class="menu-icon">☰</span>
             <span class="app-title">Akademiya Ezidi</span>
         </div>
-        <div class="lang-selector">🌐 𐺩𐺏𐺨𐺋𐺨 ▾</div>
+        <div class="lang-selector">🌐 English ▾</div>
     </div>
 
     <div class="container">
@@ -27,7 +27,7 @@
                 </div>
                 <div class="header-text-center">
                     <h1>برنامج تعلم اللغة الإيزيدية</h1>
-                    <p>اختر المستوى التعليمي المناسب لبدء التعلم:</p>
+                    <p>اختر المستوى التعليمي لفتح الحروف والكلمات الخاصة به:</p>
                 </div>
                 <div class="header-logo-left">
                     <img src="images/images.jpeg" alt="Flag">
@@ -47,21 +47,21 @@
                     <div class="level-badge a1">A1</div>
                     <div class="level-info">
                         <span class="level-title">Anfänger</span>
-                        <span class="level-subtitle">Beginner</span>
+                        <span class="level-subtitle">Beginner (مستوى 1)</span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('A2')">
                     <div class="level-badge a2">A2</div>
                     <div class="level-info">
                         <span class="level-title">Grundlagen</span>
-                        <span class="level-subtitle">Elementary</span>
+                        <span class="level-subtitle">Elementary (مستوى 2)</span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('B1')">
                     <div class="level-badge b1">B1</div>
                     <div class="level-info">
                         <span class="level-title">Mittelstufe</span>
-                        <span class="level-subtitle">Intermediate</span>
+                        <span class="level-subtitle">Intermediate (مستوى 3)</span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('B2')">
@@ -90,28 +90,28 @@
 
         <div id="letters-section" class="section">
             <div class="content-header">
-                <button class="back-btn" onclick="goToLevels()">🡪 العودة للمستويات</button>
-                <h2 id="current-level-title">المرحلة الأولى: تعلّم الحروف</h2>
-                <p>اضغط على الحرف للاستماع إلى النطق الصحيح:</p>
+                <button class="back-btn" onclick="goToLevels()">🡪 القائمة الرئيسية</button>
+                <h2 id="current-level-title">تعلّم الحروف</h2>
+                <p>اضغط على الحرف للاستماع إلى نطق الحرف للمستوى الحالي:</p>
             </div>
             <div class="grid-container" id="letters-grid"></div>
-            <button class="btn btn-next" onclick="goToWords()">الانتقال إلى الكلمات ←</button>
+            <button class="btn btn-next" onclick="goToWords()">الانتقال إلى الكلمات للمستوى الحالي ←</button>
         </div>
 
         <div id="words-section" class="section">
             <div class="content-header">
-                <button class="back-btn" onclick="goToLevels()">🡪 العودة للمستويات</button>
-                <h2>المرحلة الثانية: تعلّم الكلمات</h2>
-                <p>اضغط على الكلمة للاستماع إلى نطقها وترجمتها بالألمانية والعربية:</p>
+                <button class="back-btn" onclick="goToLevels()">🡪 القائمة الرئيسية</button>
+                <h2 id="current-words-title">تعلّم الكلمات</h2>
+                <p>اضغط على الكلمة للاستماع إلى نطقها وترجمتها:</p>
             </div>
             <div class="grid-container" id="words-grid"></div>
-            <button class="btn btn-next" onclick="goToQuiz()">الانتقال إلى الاختبار ←</button>
+            <button class="btn btn-next" onclick="goToQuiz()">الانتقال إلى اختبار هذا المستوى ←</button>
         </div>
 
         <div id="quiz-section" class="section">
             <div class="content-header">
-                <button class="back-btn" onclick="goToLevels()">🡪 العودة للمستويات</button>
-                <h2>المرحلة الثالثة: الاختبار (Test)</h2>
+                <button class="back-btn" onclick="goToLevels()">🡪 القائمة الرئيسية</button>
+                <h2 id="current-quiz-title">الاختبار</h2>
             </div>
             <div class="quiz-container">
                 <p id="quiz-question" style="font-size: 20px; font-weight: bold; color: #e2e8f0;"></p>
@@ -125,7 +125,7 @@
 
     <div class="bottom-nav">
         <button class="nav-item active" id="nav-home" onclick="goToLevels()">
-            <span class="nav-icon">🏠</span>
+            <span class="nav-icon">🏠</span> الرئيسية
         </button>
         <button class="nav-item" onclick="startLevel('A1')">A1</button>
         <button class="nav-item" onclick="startLevel('A2')">A2</button>
