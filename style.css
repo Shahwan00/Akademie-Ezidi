@@ -1,8 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Cairo:wght=200..1000&display=swap');
 
+/* خط الأحرف الأيزيدية */
 @font-face {
   font-family: 'Noto Serif Yezidi';
-  src: url('/NotoSerifYezidi-VariableFont_wght.ttf') format('truetype');
+  src: url('NotoSerifYezidi-VariableFont_wght.ttf') format('truetype');
   font-weight: 100 900;
   font-style: normal;
 }
@@ -12,6 +13,19 @@
   src: url('NotoSerifYezidi-VariableFont_wght.ttf') format('truetype');
   font-weight: normal;
   font-style: normal;
+}
+
+/* خط الأرقام الأيزيدية الجديد */
+@font-face {
+  font-family: 'YezidiNumberFont';
+  src: url('Yazidinummer-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* فئة تطبيق خط الأرقام الأيزيدية */
+.yezidi-num {
+    font-family: 'YezidiNumberFont', sans-serif !important;
 }
 
 body {
