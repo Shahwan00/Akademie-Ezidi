@@ -40,20 +40,11 @@ const lettersData = [
     { level: "A1", yezidi: "𐺱", kurmanji: "Ê", arabic: "ياء بحركات تاريخية", audio: "audio/yot_circumflex.mp3" }
 ];
 
-// 2. قاعدة بيانات الأرقام الأيزيدية
-const numbersData = [
-    { num: "0", kurmanji: "Sifr", arabic: "صفر" },
-    { num: "1", kurmanji: "Yek", arabic: "واحد" },
-    { num: "2", kurmanji: "Du", arabic: "اثنان" },
-    { num: "3", kurmanji: "Sê", arabic: "ثلاثة" },
-    { num: "4", kurmanji: "Chaar", arabic: "أربعة" },
-    { num: "5", kurmanji: "Pênc", arabic: "خمسة" },
-    { num: "6", kurmanji: "Şeş", arabic: "ستة" },
-    { num: "7", kurmanji: "Heft", arabic: "سبعة" },
-    { num: "8", kurmanji: "Heşt", arabic: "ثمانية" },
-    { num: "9", kurmanji: "Neh", arabic: "تسعة" },
-    { num: "10", kurmanji: "Deh", arabic: "عشرة" }
-];
+// 2. توليد قاعدة بيانات الأرقام الأيزيدية من 0 إلى 1000 تلقائياً
+const numbersData = Array.from({ length: 1001 }, (_, i) => ({
+    num: i.toString(),
+    arabic: `الرقم: ${i}`
+}));
 
 // 3. قاعدة بيانات الكلمات
 const wordsData = [
@@ -140,7 +131,7 @@ function goToNumbers() {
     renderNumbers();
 }
 
-// دالة عرض الأرقام الأيزيدية
+// دالة عرض الأرقام الأيزيدية (عرض الأرقام من 0 إلى 1000)
 function renderNumbers() {
     const grid = document.getElementById("numbers-grid");
     grid.innerHTML = "";
@@ -150,8 +141,8 @@ function renderNumbers() {
         card.className = "card";
         
         card.innerHTML = `
-            <div class="yezidi-num" style="font-size: 38px; color: #58a6ff; margin-bottom: 5px;">${item.num}</div>
-            <div class="translation"><strong style="color:#ffaa00;">${item.kurmanji}</strong><br>${item.arabic}</div>
+            <div class="yezidi-num" style="font-size: 36px; color: #58a6ff; margin-bottom: 5px;">${item.num}</div>
+            <div class="translation">${item.arabic}</div>
         `;
         grid.appendChild(card);
     });
