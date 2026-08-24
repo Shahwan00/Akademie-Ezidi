@@ -1,4 +1,4 @@
-// 1. قاعدة بيانات الحروف - تم وضع جميع الحروف الـ 38 في المستوى A1 فقط بناءً على طلبك
+// 1. قاعدة بيانات الحروف
 const lettersData = [
     { level: "A1", yezidi: "𐺀", kurmanji: "A", arabic: "ألف", audio: "audio/a.mp3" }, 
     { level: "A1", yezidi: "𐺁", kurmanji: "B", arabic: "باء", audio: "audio/b.mp3" }, 
@@ -40,7 +40,22 @@ const lettersData = [
     { level: "A1", yezidi: "𐺱", kurmanji: "Ê", arabic: "ياء بحركات تاريخية", audio: "audio/yot_circumflex.mp3" }
 ];
 
-// 2. قاعدة بيانات الكلمات - مقسمة وموزعة على كافة المستويات مع كلمات كورمانجية من عندي
+// 2. قاعدة بيانات الأرقام الأيزيدية
+const numbersData = [
+    { num: "0", kurmanji: "Sifr", arabic: "صفر" },
+    { num: "1", kurmanji: "Yek", arabic: "واحد" },
+    { num: "2", kurmanji: "Du", arabic: "اثنان" },
+    { num: "3", kurmanji: "Sê", arabic: "ثلاثة" },
+    { num: "4", kurmanji: "Chaar", arabic: "أربعة" },
+    { num: "5", kurmanji: "Pênc", arabic: "خمسة" },
+    { num: "6", kurmanji: "Şeş", arabic: "ستة" },
+    { num: "7", kurmanji: "Heft", arabic: "سبعة" },
+    { num: "8", kurmanji: "Heşt", arabic: "ثمانية" },
+    { num: "9", kurmanji: "Neh", arabic: "تسعة" },
+    { num: "10", kurmanji: "Deh", arabic: "عشرة" }
+];
+
+// 3. قاعدة بيانات الكلمات
 const wordsData = [
     // ================= مستوى A1 =================
     { level: "A1", yezidi: "𐺀𐺛", kurmanji: "Av", arabic: "ماء (Wasser)", audio: "audio/wasser.mp3" },
@@ -100,6 +115,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 function playSound(audioSrc) {
+    if(!audioSrc) return;
     const audio = new Audio(audioSrc);
     audio.play().catch(err => console.log("الصوت غير جاهز بعد:", audioSrc));
 }
@@ -116,6 +132,29 @@ function goToLevels() {
     switchSection('levels-section');
     document.querySelectorAll('.bottom-nav .nav-item').forEach(item => item.classList.remove('active'));
     document.getElementById('nav-home').classList.add('active');
+}
+
+// دالة للانتقال إلى قسم الأرقام
+function goToNumbers() {
+    switchSection('numbers-section');
+    renderNumbers();
+}
+
+// دالة عرض الأرقام الأيزيدية
+function renderNumbers() {
+    const grid = document.getElementById("numbers-grid");
+    grid.innerHTML = "";
+    
+    numbersData.forEach(item => {
+        const card = document.createElement("div");
+        card.className = "card";
+        
+        card.innerHTML = `
+            <div class="yezidi-num" style="font-size: 38px; color: #58a6ff; margin-bottom: 5px;">${item.num}</div>
+            <div class="translation"><strong style="color:#ffaa00;">${item.kurmanji}</strong><br>${item.arabic}</div>
+        `;
+        grid.appendChild(card);
+    });
 }
 
 function startLevel(levelName) {
