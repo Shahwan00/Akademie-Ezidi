@@ -7,7 +7,6 @@
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3516282666099519" crossorigin="anonymous"></script>
     
-    <!-- إضافة تعريف الخط الخاص بالأرقام الأيزيدية -->
     <style>
         @font-face {
             font-family: 'YezidiFont';
@@ -55,6 +54,15 @@
             </div>
 
             <div class="grid-levels">
+                <!-- بطاقة الأرقام الأيزيدية الجديدة -->
+                <div class="level-card" onclick="goToNumbers()" style="border-color: #ec4899;">
+                    <div class="level-badge yezidi-num" style="background-color: #ec4899; font-size: 20px;">1</div>
+                    <div class="level-info">
+                        <span class="level-title">تعلّم الأرقام الأيزيدية</span>
+                        <span class="level-subtitle">الأرقام وشكلها بـ 𐺩𐺏𐺨𐺋𐺨</span>
+                    </div>
+                </div>
+
                 <div class="level-card" onclick="startLevel('A1')">
                     <div class="level-badge a1 yezidi-num">A1</div>
                     <div class="level-info">
@@ -98,6 +106,16 @@
                     </div>
                 </div>
             </div>
+        </div>
+
+        <!-- قسم عرض الأرقام الأيزيدية الجديد -->
+        <div id="numbers-section" class="section">
+            <div class="content-header">
+                <button class="back-btn" onclick="goToLevels()">🡪 القائمة الرئيسية</button>
+                <h2>تعلّم الأرقام الأيزيدية</h2>
+                <p>قائمة الأرقام بالخط الأيزيدي مع المعنى والتلفظ:</p>
+            </div>
+            <div class="grid-container" id="numbers-grid"></div>
         </div>
 
         <div id="letters-section" class="section">
