@@ -6,6 +6,18 @@
     <title>Akademiya Ezidi - 𐺏𐺦𐺢𐺨𐺢𐺀 𐺏𐺌𐺡𐺀𐺢𐺩 𐺩𐺏𐺨𐺋𐺨</title>
     <link rel="stylesheet" href="style.css">
     <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3516282666099519" crossorigin="anonymous"></script>
+    
+    <!-- إضافة تعريف الخط الخاص بالأرقام الأيزيدية -->
+    <style>
+        @font-face {
+            font-family: 'YezidiFont';
+            src: url('Yazidinummer-Regular.ttf') format('truetype');
+        }
+
+        .yezidi-num {
+            font-family: 'YezidiFont', sans-serif !important;
+        }
+    </style>
 </head>
 <body>
 
@@ -44,45 +56,45 @@
 
             <div class="grid-levels">
                 <div class="level-card" onclick="startLevel('A1')">
-                    <div class="level-badge a1">A1</div>
+                    <div class="level-badge a1 yezidi-num">A1</div>
                     <div class="level-info">
                         <span class="level-title">𐺋𐺦𐺑𐺄𐺂𐺩𐺞</span>
                         <span class="level-subtitle"> 𐺑𐺨𐺍𐺝𐺀 𐺣𐺣 𐺂𐺦𐺨𐺛𐺩𐺢 𐺁𐺌𐺢𐺟𐺦𐺧𐺨𐺢 </span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('A2')">
-                    <div class="level-badge a2">A2</div>
+                    <div class="level-badge a2 yezidi-num">A2</div>
                     <div class="level-info">
                         <span class="level-title">𐺋𐺦𐺑𐺄𐺂𐺩𐺝𐺀 𐺂𐺩𐺒𐺝𐺦𐺄𐺨</span>
-                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 A2</span>
+                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 <span class="yezidi-num">A2</span></span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('B1')">
-                    <div class="level-badge b1">B1</div>
+                    <div class="level-badge b1 yezidi-num">B1</div>
                     <div class="level-info">
                         <span class="level-title">𐺢𐺩𐺛𐺩</span>
-                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 B1</span>
+                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 <span class="yezidi-num">B1</span></span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('B2')">
-                    <div class="level-badge b2">B2</div>
+                    <div class="level-badge b2 yezidi-num">B2</div>
                     <div class="level-info">
                         <span class="level-title">𐺢𐺩𐺛𐺀 𐺂𐺩𐺒𐺝𐺦𐺄𐺨</span>
-                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 B2</span>
+                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 <span class="yezidi-num">B2</span></span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('C1')">
-                    <div class="level-badge c1">C1</div>
+                    <div class="level-badge c1 yezidi-num">C1</div>
                     <div class="level-info">
                         <span class="level-title">𐺂𐺩𐺒𐺝𐺦𐺄𐺨</span>
-                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 C1</span>
+                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 <span class="yezidi-num">C1</span></span>
                     </div>
                 </div>
                 <div class="level-card" onclick="startLevel('C2')">
-                    <div class="level-badge c2">C2</div>
+                    <div class="level-badge c2 yezidi-num">C2</div>
                     <div class="level-info">
                         <span class="level-title">𐺆𐺌𐺧𐺩 𐺧𐺦𐺍𐺩 𐺁𐺌𐺠𐺌𐺢𐺋</span>
-                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 C2</span>
+                        <span class="level-subtitle"> 𐺂𐺦𐺨𐺛𐺩𐺢 𐺀𐺑𐺄𐺩 <span class="yezidi-num">C2</span></span>
                     </div>
                 </div>
             </div>
@@ -127,12 +139,12 @@
         <button class="nav-item active" id="nav-home" onclick="goToLevels()">
             <span class="nav-icon">🏠</span> 𐺡𐺀𐺠
         </button>
-        <button class="nav-item" onclick="startLevel('A1')">A1</button>
-        <button class="nav-item" onclick="startLevel('A2')">A2</button>
-        <button class="nav-item" onclick="startLevel('B1')">B1</button>
-        <button class="nav-item" onclick="startLevel('B2')">B2</button>
-        <button class="nav-item" onclick="startLevel('C1')">C1</button>
-        <button class="nav-item" onclick="startLevel('C2')">C2</button>
+        <button class="nav-item yezidi-num" onclick="startLevel('A1')">A1</button>
+        <button class="nav-item yezidi-num" onclick="startLevel('A2')">A2</button>
+        <button class="nav-item yezidi-num" onclick="startLevel('B1')">B1</button>
+        <button class="nav-item yezidi-num" onclick="startLevel('B2')">B2</button>
+        <button class="nav-item yezidi-num" onclick="startLevel('C1')">C1</button>
+        <button class="nav-item yezidi-num" onclick="startLevel('C2')">C2</button>
     </div>
 
     <script src="script.js"></script>
