@@ -131,7 +131,7 @@ function goToNumbers() {
     renderNumbers();
 }
 
-// دالة عرض الأرقام الأيزيدية (عرض الأرقام من 0 إلى 1000)
+// دالة عرض الأرقام الأيزيدية (تغليفها بفئة الخط الأيزيدي الخاص بك تلقائياً)
 function renderNumbers() {
     const grid = document.getElementById("numbers-grid");
     grid.innerHTML = "";
